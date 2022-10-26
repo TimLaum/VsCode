@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users/l22208126/CLionProjects/VsCode/cmake-build-debug
 
 build cmake_object_order_depends_target_VsCode: phony || CMakeFiles/VsCode.dir
 
-build CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_7_TD6_Mme_Lucet.c.obj: C_COMPILER__VsCode_Debug C$:/Users/l22208126/CLionProjects/VsCode/Exos$ Mme$ Lucet/Exo$ 7$ TD6$ Mme$ Lucet.c || cmake_object_order_depends_target_VsCode
-  DEP_FILE = CMakeFiles\VsCode.dir\Exos_Mme_Lucet\Exo_7_TD6_Mme_Lucet.c.obj.d
+build CMakeFiles/VsCode.dir/Exos_Mr_Delahoche/Exo_8,9_et_10_TD1.c.obj: C_COMPILER__VsCode_Debug C$:/Users/l22208126/CLionProjects/VsCode/Exos$ Mr$ Delahoche/Exo$ 8,9$ et$ 10$ TD1.c || cmake_object_order_depends_target_VsCode
+  DEP_FILE = CMakeFiles\VsCode.dir\Exos_Mr_Delahoche\Exo_8,9_et_10_TD1.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\VsCode.dir
-  OBJECT_FILE_DIR = CMakeFiles\VsCode.dir\Exos_Mme_Lucet
+  OBJECT_FILE_DIR = CMakeFiles\VsCode.dir\Exos_Mr_Delahoche
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_7_TD6_Mme_Lucet.c.obj: C_COMPILER
 #############################################
 # Link the executable VsCode.exe
 
-build VsCode.exe: C_EXECUTABLE_LINKER__VsCode_Debug CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_7_TD6_Mme_Lucet.c.obj
+build VsCode.exe: C_EXECUTABLE_LINKER__VsCode_Debug CMakeFiles/VsCode.dir/Exos_Mr_Delahoche/Exo_8,9_et_10_TD1.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\VsCode.dir
