@@ -3,20 +3,27 @@
 void moyenne(int* compt,float* moyenne){
     int i=1;
     float resultat=0,note;
-    while(note != 0){
-        printf("\nDonnez la note n°%d ou annulez en tapant 0 : ",i);
+    *moyenne=0;
+    while(note != -1){
+        printf("\nDonnez la note num\x82ro %d ou annulez en tapant -1 : ",i);
         scanf("%f",&note);
-        while(note<0 || note>20){
-            printf("\nNote impossible! Réessayez : ");
+        while(note<0 && note!=-1 || note>20){
+            printf("\nNote impossible! Reessayez : ");
             scanf("%f",&note);
         }
         i++;
-        if(note!=0){
+        if(note!=-1){
             *compt= *compt+1;
         }
         resultat = resultat + note;
     }
-    *moyenne = resultat/ *compt;
+    if(*compt==0){
+        *moyenne=0;
+    }
+    else{
+        *moyenne = resultat/ *compt;
+    }
+
 
 }
 
