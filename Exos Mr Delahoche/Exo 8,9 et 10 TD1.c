@@ -12,10 +12,10 @@ void moyenne(int* compt,float* moyenne){
             scanf("%f",&note);
         }
         i++;
-        if(note!=-1){
-            *compt= *compt+1;
+        if(note!=-1) {
+            *compt = *compt + 1;
+            resultat = resultat + note;
         }
-        resultat = resultat + note;
     }
     if(*compt==0){
         *moyenne=0;
