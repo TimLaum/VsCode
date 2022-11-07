@@ -1,21 +1,21 @@
 #include <stdio.h>
  void ecriture()
 {
-	FILE * fp = fopen("clients.csv", "a");
+	FILE * fp = fopen("clients.csv", "a");// définition / création du fichier clients.csv
 
 	char forename[25] = "";
 	char firstname[25] = "";
 	char age[3] = "";
 	char country[50] = "";
 	char departement[5] = "";
-	char tmps[3] = "";
-	char familly[15] = "";
+	char time[3] = "";
+	char family[15] = "";
 	int i = 1;
     int nombre = 0;
 
     printf("Donnez le nombre de clients a enregistrer : ");
     scanf("%d",&nombre);
-	while (i<=nombre)
+	while (i<=nombre)//Ecriture des données des clients selon leur nombre
 	{
 		printf("\nVeuillez saisir le prenom du client numero %d : ",i);
 		scanf("%s", &forename);
@@ -28,10 +28,10 @@
 		printf("\nVeuillez saisir le departement du client numero %d : ",i);
 		scanf("%s", &departement);
 		printf("\nVeuillez saisir le temps de sejour du client numero %d : ",i);
-		scanf("%s", &tmps);
+		scanf("%s", &time);
 		printf("\nVeuillez saisir le nombre de membres dans la famille du client numero %d : ",i);
-		scanf("%s", &familly);
+		scanf("%s", &family);
 		i++;
 	}
-	fclose(fp);
+	fclose(fp);//Fin de l'écriture
 }
