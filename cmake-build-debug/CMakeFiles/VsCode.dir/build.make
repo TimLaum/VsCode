@@ -68,28 +68,28 @@ include CMakeFiles/VsCode.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/VsCode.dir/flags.make
 
-CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj: CMakeFiles/VsCode.dir/flags.make
-CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj: ../Exos\ Mme\ Lucet/Exo\ 5\ TD7\ Mme\ Lucet.c
-CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj: CMakeFiles/VsCode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj"
-	C:\Users\L22208~1\AppData\Local\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj -MF CMakeFiles\VsCode.dir\Exos_Mme_Lucet\Exo_5_TD7_Mme_Lucet.c.obj.d -o CMakeFiles\VsCode.dir\Exos_Mme_Lucet\Exo_5_TD7_Mme_Lucet.c.obj -c "C:\Users\l22208126\CLionProjects\VsCode\Exos Mme Lucet\Exo 5 TD7 Mme Lucet.c"
+CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj: CMakeFiles/VsCode.dir/flags.make
+CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj: ../Exos\ Mr\ Pegard/Exo\ 8\ Tp\ fichier.c
+CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj: CMakeFiles/VsCode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj"
+	C:\Users\L22208~1\AppData\Local\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj -MF CMakeFiles\VsCode.dir\Exos_Mr_Pegard\Exo_8_Tp_fichier.c.obj.d -o CMakeFiles\VsCode.dir\Exos_Mr_Pegard\Exo_8_Tp_fichier.c.obj -c "C:\Users\l22208126\CLionProjects\VsCode\Exos Mr Pegard\Exo 8 Tp fichier.c"
 
-CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.i"
-	C:\Users\L22208~1\AppData\Local\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\l22208126\CLionProjects\VsCode\Exos Mme Lucet\Exo 5 TD7 Mme Lucet.c" > CMakeFiles\VsCode.dir\Exos_Mme_Lucet\Exo_5_TD7_Mme_Lucet.c.i
+CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.i"
+	C:\Users\L22208~1\AppData\Local\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\l22208126\CLionProjects\VsCode\Exos Mr Pegard\Exo 8 Tp fichier.c" > CMakeFiles\VsCode.dir\Exos_Mr_Pegard\Exo_8_Tp_fichier.c.i
 
-CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.s"
-	C:\Users\L22208~1\AppData\Local\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\l22208126\CLionProjects\VsCode\Exos Mme Lucet\Exo 5 TD7 Mme Lucet.c" -o CMakeFiles\VsCode.dir\Exos_Mme_Lucet\Exo_5_TD7_Mme_Lucet.c.s
+CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.s"
+	C:\Users\L22208~1\AppData\Local\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\l22208126\CLionProjects\VsCode\Exos Mr Pegard\Exo 8 Tp fichier.c" -o CMakeFiles\VsCode.dir\Exos_Mr_Pegard\Exo_8_Tp_fichier.c.s
 
 # Object files for target VsCode
 VsCode_OBJECTS = \
-"CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj"
+"CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj"
 
 # External object files for target VsCode
 VsCode_EXTERNAL_OBJECTS =
 
-VsCode.exe: CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj
+VsCode.exe: CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj
 VsCode.exe: CMakeFiles/VsCode.dir/build.make
 VsCode.exe: CMakeFiles/VsCode.dir/linklibs.rsp
 VsCode.exe: CMakeFiles/VsCode.dir/objects1.rsp

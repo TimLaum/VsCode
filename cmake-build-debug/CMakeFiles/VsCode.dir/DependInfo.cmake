@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/l22208126/CLionProjects/VsCode/Exos Mme Lucet/Exo 5 TD7 Mme Lucet.c" "CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj" "gcc" "CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj.d"
+  "C:/Users/l22208126/CLionProjects/VsCode/Exos Mr Pegard/Exo 8 Tp fichier.c" "CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj" "gcc" "CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj.d"
   )
 
 # Targets to which this target links.

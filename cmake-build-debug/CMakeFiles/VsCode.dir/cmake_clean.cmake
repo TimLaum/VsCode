@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj"
-  "CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj.d"
+  "CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj"
+  "CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj.d"
   "VsCode.exe"
   "VsCode.exe.manifest"
   "VsCode.pdb"
