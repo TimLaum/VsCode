@@ -128,29 +128,29 @@ VsCode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/build
 .PHONY : VsCode/fast
 
-SAE_1-2/lecture_fichier.obj: SAE_1-2/lecture_fichier.c.obj
-.PHONY : SAE_1-2/lecture_fichier.obj
+Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.obj: Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj
+.PHONY : Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.obj
 
 # target to build an object file
-SAE_1-2/lecture_fichier.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/SAE_1-2/lecture_fichier.c.obj
-.PHONY : SAE_1-2/lecture_fichier.c.obj
+Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj
+.PHONY : Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.obj
 
-SAE_1-2/lecture_fichier.i: SAE_1-2/lecture_fichier.c.i
-.PHONY : SAE_1-2/lecture_fichier.i
+Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.i: Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.i
+.PHONY : Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.i
 
 # target to preprocess a source file
-SAE_1-2/lecture_fichier.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/SAE_1-2/lecture_fichier.c.i
-.PHONY : SAE_1-2/lecture_fichier.c.i
+Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.i
+.PHONY : Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.i
 
-SAE_1-2/lecture_fichier.s: SAE_1-2/lecture_fichier.c.s
-.PHONY : SAE_1-2/lecture_fichier.s
+Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.s: Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.s
+.PHONY : Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.s
 
 # target to generate assembly for a file
-SAE_1-2/lecture_fichier.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/SAE_1-2/lecture_fichier.c.s
-.PHONY : SAE_1-2/lecture_fichier.c.s
+Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.s
+.PHONY : Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... VsCode
-	@echo ... SAE_1-2/lecture_fichier.obj
-	@echo ... SAE_1-2/lecture_fichier.i
-	@echo ... SAE_1-2/lecture_fichier.s
+	@echo ... Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.obj
+	@echo ... Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.i
+	@echo ... Exos_Mme_Lucet/Exo_5_TD7_Mme_Lucet.s
 .PHONY : help
 
 
