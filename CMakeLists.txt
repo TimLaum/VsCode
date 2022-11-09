@@ -3,4 +3,4 @@ project(VsCode C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(VsCode "Exos Mr Pegard/Exo 8 Tp fichier.c")
+add_executable(VsCode "Exos Mme Lucet/Exo 1 TD8 Mme Lucet.c")

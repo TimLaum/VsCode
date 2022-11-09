@@ -128,29 +128,29 @@ VsCode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/build
 .PHONY : VsCode/fast
 
-Exos_Mr_Pegard/Exo_8_Tp_fichier.obj: Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj
-.PHONY : Exos_Mr_Pegard/Exo_8_Tp_fichier.obj
+Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.obj: Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj
+.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.obj
 
 # target to build an object file
-Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj
-.PHONY : Exos_Mr_Pegard/Exo_8_Tp_fichier.c.obj
+Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj
+.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj
 
-Exos_Mr_Pegard/Exo_8_Tp_fichier.i: Exos_Mr_Pegard/Exo_8_Tp_fichier.c.i
-.PHONY : Exos_Mr_Pegard/Exo_8_Tp_fichier.i
+Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.i: Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i
+.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.i
 
 # target to preprocess a source file
-Exos_Mr_Pegard/Exo_8_Tp_fichier.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.i
-.PHONY : Exos_Mr_Pegard/Exo_8_Tp_fichier.c.i
+Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i
+.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i
 
-Exos_Mr_Pegard/Exo_8_Tp_fichier.s: Exos_Mr_Pegard/Exo_8_Tp_fichier.c.s
-.PHONY : Exos_Mr_Pegard/Exo_8_Tp_fichier.s
+Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.s: Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s
+.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.s
 
 # target to generate assembly for a file
-Exos_Mr_Pegard/Exo_8_Tp_fichier.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mr_Pegard/Exo_8_Tp_fichier.c.s
-.PHONY : Exos_Mr_Pegard/Exo_8_Tp_fichier.c.s
+Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s
+.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... VsCode
-	@echo ... Exos_Mr_Pegard/Exo_8_Tp_fichier.obj
-	@echo ... Exos_Mr_Pegard/Exo_8_Tp_fichier.i
-	@echo ... Exos_Mr_Pegard/Exo_8_Tp_fichier.s
+	@echo ... Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.obj
+	@echo ... Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.i
+	@echo ... Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.s
 .PHONY : help
 
 
