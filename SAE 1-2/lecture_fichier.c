@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 #include "ecriture_fichier.c" //Introduction du fichier pour écrire les données dans clients.csv
 #define MAX_BUFFER_SIZE 1000
 
 
-int main()
+void lecture_fichier()
 {
     FILE * fp;
 
@@ -21,5 +22,74 @@ int main()
     }
     printf("\n");
     fclose(fp);
+}
+
+
+int main()
+{
+    // Substitute the full file path
+    // for the string file_path
+    FILE* fp = fopen("clients.csv", "r");
+
+    if (!fp)
+        printf("Can't open file\n");
+
+    else {
+        // Here we have taken size of
+        // array 1024 you can modify it
+        char buffer[1024];
+
+        int row = 0;
+        int column = 0;
+
+        while (fgets(buffer,
+                     MAX_BUFFER_SIZE, fp)) {
+            column = 0;
+            row++;
+
+            // To avoid printing of column
+            // names in file can be changed
+            // according to need
+            if (row == 1)
+                continue;
+
+            // Splitting the data
+            char* value = strtok(buffer, ", ");
+
+            while (value) {
+                switch (column) {
+                    case 0 :
+                        printf("Prenom :");
+                        break;
+                    case 1 :
+                        printf(" Nom :");
+                        break;
+                    case 2 :
+                        printf(" Age :");
+                        break;
+                    case 3 :
+                        printf(" Pays :");
+                        break;
+                    case 4 :
+                        printf(" Departement :");
+                        break;
+                    case 5 :
+                        printf(" Temps de sejour (en jour) :");
+                        break;
+                    case 6 :
+                        printf(" Nombre de membres :");
+                        break;
+                }
+                    printf("%s", value);
+
+                value = strtok(NULL, ", ");
+                column++;
+            }
+            printf("\n");
+        }
+
+        // Close the file
+        fclose(fp);
+    }
     return 0;
 }
