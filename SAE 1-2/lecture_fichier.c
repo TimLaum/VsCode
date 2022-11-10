@@ -2,12 +2,15 @@
 #include <string.h>
 #include "ecriture_fichier.c" //Introduction du fichier pour écrire les données dans clients.csv
 #define MAX_BUFFER_SIZE 1000
+typedef struct  Personnes Individu;
+struct Personnes{
+    char forename[25],firstname[25],age[3],country[50],departement[5],time[3],family[15];
+};
 
 
 void lecture_fichier()
 {
     FILE * fp;
-
     fp = fopen("clients.csv", "r");
     while(fp == NULL) // Tant que le fichier est vide (pour éviter tout bug a cause d'un fichier vide)
     {
@@ -41,6 +44,7 @@ int main()
 
         int row = 0;
         int column = 0;
+        struct Personnes tab[30];
 
         while (fgets(buffer,
                      MAX_BUFFER_SIZE, fp)) {
@@ -50,8 +54,6 @@ int main()
             // To avoid printing of column
             // names in file can be changed
             // according to need
-            if (row == 1)
-                continue;
 
             // Splitting the data
             char* value = strtok(buffer, ", ");
@@ -59,34 +61,32 @@ int main()
             while (value) {
                 switch (column) {
                     case 0 :
-                        printf("Prenom :");
+                        strcpy(tab[row].forename,value);
                         break;
                     case 1 :
-                        printf(" Nom :");
+                        strcpy(tab[row].firstname,value);
                         break;
                     case 2 :
-                        printf(" Age :");
+                        strcpy(tab[row].age,value);
                         break;
                     case 3 :
-                        printf(" Pays :");
+                        strcpy(tab[row].country,value);
                         break;
                     case 4 :
-                        printf(" Departement :");
+                        strcpy(tab[row].departement,value);
                         break;
                     case 5 :
-                        printf(" Temps de sejour (en jour) :");
+                        strcpy(tab[row].time,value);
                         break;
                     case 6 :
-                        printf(" Nombre de membres :");
+                        strcpy(tab[row].family,value);
                         break;
                 }
-                    printf("%s", value);
-
                 value = strtok(NULL, ", ");
                 column++;
             }
-            printf("\n");
         }
+        printf("%s",tab[2].forename);
 
         // Close the file
         fclose(fp);
