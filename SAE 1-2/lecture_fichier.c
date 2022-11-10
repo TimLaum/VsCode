@@ -8,24 +8,61 @@ struct Personnes{
 };
 
 
-void lecture_fichier()
-{
+void lecture_fichier(){
     FILE * fp;
     fp = fopen("clients.csv", "r");
-    while(fp == NULL) // Tant que le fichier est vide (pour éviter tout bug a cause d'un fichier vide)
-    {
-        printf("Erreur fichier vide\n");
-        ecriture(); // Appel de la fonction ecriture du fichier ecriture_fichier.c pour remplir clients.csv qui est vide
-        fp = fopen("clients.csv", "r"); // réintroduction du fichier cette fois-ci non vide
-    }
+    if (!fp)
+        ecriture();
+    else {
+        char buffer[MAX_BUFFER_SIZE];
 
-    char str[MAX_BUFFER_SIZE];// MAX_BUFFER_SIZE pour éviter tout problème de corrélation de charactères
-    while (fgets(str, MAX_BUFFER_SIZE, fp) != NULL) {// Tant que la donnée a afficher n'est pas nulle
-        printf("%s", str);
+        int row = 0;
+        int column = 0;
+
+        while (fgets(buffer,
+                     MAX_BUFFER_SIZE, fp)) {
+            column = 0;
+
+
+            // To avoid printing of column
+            // names in file can be changed
+            // according to need
+            if (row == 1)
+                continue;
+
+            // Splitting the data
+            char* value = strtok(buffer, ", ");
+
+            while (value) {
+                // Column 1
+                if (column == 0) {
+                    printf("Name :");
+                }
+
+                // Column 2
+                if (column == 1) {
+                    printf("\tAccount No. :");
+                }
+
+                // Column 3
+                if (column == 2) {
+                    printf("\tAmount :");
+                }
+
+                printf("%s", value);
+                value = strtok(NULL, ", ");
+                column++;
+                row++;
+            }
+
+            printf("\n");
+        }
+
+        // Close the file
+        fclose(fp);
     }
-    printf("\n");
-    fclose(fp);
 }
+
 
 
 int main()
@@ -49,7 +86,7 @@ int main()
         while (fgets(buffer,
                      MAX_BUFFER_SIZE, fp)) {
             column = 0;
-            row++;
+
 
             // To avoid printing of column
             // names in file can be changed
@@ -57,7 +94,6 @@ int main()
 
             // Splitting the data
             char* value = strtok(buffer, ", ");
-
             while (value) {
                 switch (column) {
                     case 0 :
@@ -84,12 +120,13 @@ int main()
                 }
                 value = strtok(NULL, ", ");
                 column++;
+                row++;
             }
         }
-        printf("%s",tab[2].forename);
 
         // Close the file
         fclose(fp);
+        lecture_fichier();
     }
     return 0;
 }
