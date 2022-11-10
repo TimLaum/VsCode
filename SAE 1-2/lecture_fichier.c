@@ -16,8 +16,9 @@ int main()
     }
 
     char str[MAX_BUFFER_SIZE];// MAX_BUFFER_SIZE pour éviter tout problème de corrélation de charactères
-    while (fgets(str, MAX_BUFFER_SIZE, fp) != NULL) // Tant que la donnée a afficher n'est pas nulle
+    while (fgets(str, MAX_BUFFER_SIZE, fp) != NULL) {// Tant que la donnée a afficher n'est pas nulle
         printf("%s", str);
+    }
     printf("\n");
     fclose(fp);
     return 0;

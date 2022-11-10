@@ -31,7 +31,7 @@ void ecriture()
         scanf("%s", &time);
         printf("\nVeuillez saisir le nombre de membres dans la famille du client numero %d : ",i);
         scanf("%s", &family);
-        fprintf(fp, "\n%s	%s		%s	%s		%s		%s		%s", forename,firstname,age,country,departement,time,family);
+        fprintf(fp, "\n%s,%s,%s,%s,%s,%s,%s;", forename,firstname,age,country,departement,time,family);
         i++;
     }
     fclose(fp);//Fin de l'écriture

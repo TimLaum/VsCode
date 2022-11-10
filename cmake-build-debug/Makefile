@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\l22208126\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\w22205515\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\l22208126\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Users\w22205515\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\l22208126\CLionProjects\VsCode
+CMAKE_SOURCE_DIR = C:\Users\w22205515\CLionProjects\VsCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Users\l22208126\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Users\w22205515\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Users\l22208126\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\w22205515\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\CMakeFiles C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug\CMakeFiles C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,29 @@ VsCode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/build
 .PHONY : VsCode/fast
 
-Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.obj: Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj
-.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.obj
+SAE_1-2/lecture_fichier.obj: SAE_1-2/lecture_fichier.c.obj
+.PHONY : SAE_1-2/lecture_fichier.obj
 
 # target to build an object file
-Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj
-.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.obj
+SAE_1-2/lecture_fichier.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/SAE_1-2/lecture_fichier.c.obj
+.PHONY : SAE_1-2/lecture_fichier.c.obj
 
-Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.i: Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i
-.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.i
+SAE_1-2/lecture_fichier.i: SAE_1-2/lecture_fichier.c.i
+.PHONY : SAE_1-2/lecture_fichier.i
 
 # target to preprocess a source file
-Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i
-.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.i
+SAE_1-2/lecture_fichier.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/SAE_1-2/lecture_fichier.c.i
+.PHONY : SAE_1-2/lecture_fichier.c.i
 
-Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.s: Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s
-.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.s
+SAE_1-2/lecture_fichier.s: SAE_1-2/lecture_fichier.c.s
+.PHONY : SAE_1-2/lecture_fichier.s
 
 # target to generate assembly for a file
-Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s
-.PHONY : Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.c.s
+SAE_1-2/lecture_fichier.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/SAE_1-2/lecture_fichier.c.s
+.PHONY : SAE_1-2/lecture_fichier.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... VsCode
-	@echo ... Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.obj
-	@echo ... Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.i
-	@echo ... Exos_Mme_Lucet/Exo_1_TD8_Mme_Lucet.s
+	@echo ... SAE_1-2/lecture_fichier.obj
+	@echo ... SAE_1-2/lecture_fichier.i
+	@echo ... SAE_1-2/lecture_fichier.s
 .PHONY : help
 
 

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\l22208126\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\w22205515\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\l22208126\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Users\w22205515\AppData\Local\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\l22208126\CLionProjects\VsCode
+CMAKE_SOURCE_DIR = C:\Users\w22205515\CLionProjects\VsCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/VsCode.dir/clean
 CMakeFiles/VsCode.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VsCode.dir\build.make CMakeFiles/VsCode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target VsCode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target VsCode"
 .PHONY : CMakeFiles/VsCode.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VsCode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/VsCode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\l22208126\CLionProjects\VsCode\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\w22205515\CLionProjects\VsCode\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/VsCode.dir/rule
 
 # Convenience name for target.
