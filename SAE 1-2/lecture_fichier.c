@@ -19,42 +19,40 @@ void lecture_fichier(){
         int row = 0;
         int column = 0;
 
-        while (fgets(buffer,
-                     MAX_BUFFER_SIZE, fp)) {
+        while (fgets(buffer,MAX_BUFFER_SIZE, fp)) {
             column = 0;
-
-
-            // To avoid printing of column
-            // names in file can be changed
-            // according to need
-            if (row == 1)
-                continue;
-
-            // Splitting the data
             char* value = strtok(buffer, ", ");
-
+            row++;
             while (value) {
-                // Column 1
-                if (column == 0) {
-                    printf("Name :");
-                }
-
-                // Column 2
-                if (column == 1) {
-                    printf("\tAccount No. :");
-                }
-
-                // Column 3
-                if (column == 2) {
-                    printf("\tAmount :");
+                    switch(column){
+                        case 0 :
+                            printf("%d) Prenom :",row);
+                            break;
+                        case 1 :
+                            printf(" Nom :");
+                            break;
+                        case 2 :
+                            printf(" Age :");
+                            break;
+                        case 3 :
+                            printf(" Pays :");
+                            break;
+                        case 4 :
+                            printf(" Departement :");
+                            break;
+                        case 5 :
+                            printf(" Temps de sejour :");
+                            break;
+                        case 6 :
+                            printf(" Nombre de membres :");
+                            break;
                 }
 
                 printf("%s", value);
                 value = strtok(NULL, ", ");
                 column++;
-                row++;
-            }
 
+            }
             printf("\n");
         }
 
@@ -67,55 +65,50 @@ void lecture_fichier(){
 
 int main()
 {
-    // Substitute the full file path
-    // for the string file_path
     FILE* fp = fopen("clients.csv", "r");
-
     if (!fp)
         printf("Can't open file\n");
-
     else {
-        // Here we have taken size of
-        // array 1024 you can modify it
-        char buffer[1024];
+        lecture_fichier();
+    }
+    return 0;
+}
 
+
+void createTab(){
+    FILE* fp = fopen("clients.csv", "r");
+    if (!fp)
+        printf("Can't open file\n");
+    else {
+        char buffer[1024];
         int row = 0;
         int column = 0;
         struct Personnes tab[30];
-
-        while (fgets(buffer,
-                     MAX_BUFFER_SIZE, fp)) {
+        while (fgets(buffer, MAX_BUFFER_SIZE, fp)) {
             column = 0;
-
-
-            // To avoid printing of column
-            // names in file can be changed
-            // according to need
-
-            // Splitting the data
-            char* value = strtok(buffer, ", ");
+            char *value = strtok(buffer, ", ");
             while (value) {
                 switch (column) {
                     case 0 :
-                        strcpy(tab[row].forename,value);
+                        strcpy(tab[row].forename, value);
                         break;
                     case 1 :
-                        strcpy(tab[row].firstname,value);
+                        strcpy(tab[row].firstname, value);
                         break;
                     case 2 :
-                        strcpy(tab[row].age,value);
+                        strcpy(tab[row].age, value);
                         break;
                     case 3 :
-                        strcpy(tab[row].country,value);
+                        strcpy(tab[row].country, value);
                         break;
                     case 4 :
-                        strcpy(tab[row].departement,value);
+                        strcpy(tab[row].departement, value);
                         break;
                     case 5 :
-                        strcpy(tab[row].time,value);
+                        strcpy(tab[row].time, value);
                         break;
                     case 6 :
-                        strcpy(tab[row].family,value);
+                        strcpy(tab[row].family, value);
                         break;
                 }
                 value = strtok(NULL, ", ");
@@ -123,10 +116,6 @@ int main()
                 row++;
             }
         }
-
-        // Close the file
         fclose(fp);
-        lecture_fichier();
     }
-    return 0;
 }

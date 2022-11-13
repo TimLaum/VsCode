@@ -27,9 +27,9 @@ void ecriture()
         scanf("%s", &country);
         printf("\nVeuillez saisir le departement du client numero %d : ",i);
         scanf("%s", &departement);
-        printf("\nVeuillez saisir le temps de sejour du client numero %d : ",i);
+        printf("\nVeuillez saisir le temps de sejour du client numero %d (en jour): ",i);
         scanf("%s", &time);
-        printf("\nVeuillez saisir le nombre de membres dans la famille du client numero %d : ",i);
+        printf("\nVeuillez saisir le nombre de membres avec le client numero %d : ",i);
         scanf("%s", &family);
         fprintf(fp, "\n%s,%s,%s,%s,%s,%s,%s;", forename,firstname,age,country,departement,time,family);
         i++;
