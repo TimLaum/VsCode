@@ -61,20 +61,6 @@ void lecture_fichier(){
     }
 }
 
-
-
-int main()
-{
-    FILE* fp = fopen("clients.csv", "r");
-    if (!fp)
-        printf("Can't open file\n");
-    else {
-        lecture_fichier();
-    }
-    return 0;
-}
-
-
 void createTab(){
     FILE* fp = fopen("clients.csv", "r");
     if (!fp)
@@ -119,3 +105,25 @@ void createTab(){
         fclose(fp);
     }
 }
+
+
+void retireClient(){
+    /* PAS ENCORE FONCTIONNEL JUSTE LA METHODE POUR RENOMMER UN FICHIER*/
+    rename("clients.csv","clients.csv");
+}
+
+int main()
+{
+    FILE* fp = fopen("clients.csv", "r");
+    if (!fp)
+        printf("Can't open file\n");
+    else {
+        lecture_fichier();
+    }
+    fclose(fp);
+    return 0;
+}
+
+
+
+
