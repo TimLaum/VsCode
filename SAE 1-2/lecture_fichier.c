@@ -24,31 +24,32 @@ void lecture_fichier(){
             char* value = strtok(buffer, ", ");
             row++;
             while (value) {
-                    switch(column){
-                        case 0 :
-                            printf("%d) Prenom :",row);
-                            break;
-                        case 1 :
-                            printf(" Nom :");
-                            break;
-                        case 2 :
-                            printf(" Age :");
-                            break;
-                        case 3 :
-                            printf(" Pays :");
-                            break;
-                        case 4 :
-                            printf(" Departement :");
-                            break;
-                        case 5 :
-                            printf(" Temps de sejour :");
-                            break;
-                        case 6 :
-                            printf(" Nombre de membres :");
-                            break;
+                switch(column){
+                    case 0 :
+                        printf("%d) Prenom :",row);
+                        break;
+                    case 1 :
+                        printf(" /Nom :");
+                        break;
+                    case 2 :
+                        printf(" /Age :");
+                        break;
+                    case 3 :
+                        printf(" /Pays :");
+                        break;
+                    case 4 :
+                        printf(" /Departement :");
+                        break;
+                    case 5 :
+                        printf(" /Temps de sejour :");
+                        break;
+                    case 6 :
+                        printf(" /Nombre de membres :");
+                        break;
                 }
 
                 printf("%s", value);
+
                 value = strtok(NULL, ", ");
                 column++;
 
@@ -62,17 +63,20 @@ void lecture_fichier(){
 }
 
 void createTab(){
+    int row = 0;
+    int maxrow = 0;
+    int column=0;
     FILE* fp = fopen("clients.csv", "r");
     if (!fp)
         printf("Can't open file\n");
     else {
-        char buffer[1024];
-        int row = 0;
-        int column = 0;
+        char buffer[MAX_BUFFER_SIZE];
         struct Personnes tab[30];
         while (fgets(buffer, MAX_BUFFER_SIZE, fp)) {
+            row++;
             column = 0;
             char *value = strtok(buffer, ", ");
+
             while (value) {
                 switch (column) {
                     case 0 :
@@ -99,13 +103,45 @@ void createTab(){
                 }
                 value = strtok(NULL, ", ");
                 column++;
-                row++;
+
+                maxrow++;
             }
+
         }
         fclose(fp);
     }
 }
 
+void searchClient(){
+    FILE * fp;
+    fp = fopen("clients.csv", "r");
+    char searchFN[25];
+    struct Personnes tab[30];
+    int row=0;
+    printf("\n Donnez le nom de la personne recherchee :");
+    gets(searchFN);
+    if (!fp)
+        ecriture();
+    else {
+        createTab();
+        while(strcmp(tab[row].firstname,"")!=0){
+            if(strcmp(searchFN,tab[row].firstname)==0){
+                printf("%s",tab[row].forename);
+                printf("%s",tab[row].firstname);
+                printf("%s",tab[row].age);
+                printf("%s",tab[row].country);
+                printf("%s",tab[row].departement);
+                printf("%s",tab[row].time);
+                printf("%s",tab[row].family);
+                row++;
+            }
+            else{
+                row++;
+            }
+        }
+    }
+    fclose(fp);
+}
 
 void retireClient(){
     /* PAS ENCORE FONCTIONNEL JUSTE LA METHODE POUR RENOMMER UN FICHIER*/
@@ -118,12 +154,10 @@ int main()
     if (!fp)
         printf("Can't open file\n");
     else {
-        lecture_fichier();
+        searchClient();
     }
     fclose(fp);
     return 0;
 }
-
-
 
 
